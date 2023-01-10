@@ -1,3 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  /* body {
+    @apply bg-red-800 text-red-300;
+  } */
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    font-style: normal;
+    /* src: url("https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-Regular.woff2") format("woff2"); */
+    src: url('/src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2') format("woff2");
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    font-style: italic;
+    /* src: url("https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-Italic.woff2") format("woff2"); */
+    src: url('/src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Italic.woff2') format("woff2");
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-style: normal;
+    /* src: url("https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-Medium.woff2") format("woff2"); */
+    src: url('/src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Medium.woff2') format("woff2");
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-style: italic;
+    /* src: url("https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-MediumItalic.woff2") format("woff2"); */
+    src: url('/src/assets/fonts/PlusJakartaSans/PlusJakartaSans-MediumItalic.woff2') format("woff2");
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-style: normal;
+    /* src: url("https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-SemiBold.woff2") format("woff2"); */
+    src: url('/src/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff2') format("woff2");
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    font-style: normal;
+    /* src: url("https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-Bold.woff2") format("woff2"); */
+    src: url('/src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2') format("woff2");
+  }
+
+  @font-face {
+    font-family: "Source Code Pro";
+    font-weight: 400;
+    font-style: normal;
+    /* src: url("https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-Bold.woff2") format("woff2"); */
+    src: url('/src/assets/fonts/SourceCodePro/SourceCodePro-Medium.ttf') format("ttf");
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +77,35 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.inner-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(192	192	192);
+  border-width: 2px;
+}
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box {
+  height: 12rem;
+  width: 12rem;
+  border-width: 1px;
+  /* padding: 1rem; */
+}
+
+.icon{
+  max-height: 64px;
+  max-width: 64px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
