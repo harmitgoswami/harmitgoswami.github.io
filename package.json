@@ -1,7 +1,7 @@
 {
   "name": "harmit-website",
   "version": "0.1.0",
-  "homepage": "http://harmitgoswami.github.io/harmitgoswami.github.io",
+  "homepage": "http://harmitgoswami.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
