@@ -1,19 +1,21 @@
 import React from 'react';
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Link, HashRouter as Router } from "react-router-dom";
 import {Home, Personal, Resume, Projects} from "./pages/";
 
 function App() {
   return (
     <div >
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route path="*" element={<Home />} />
+          
 
           <Route path={"/personal"} element={<Personal />} />
           <Route path={"/resume"} element={<Resume />} />
           <Route path={"/projects"} element={<Projects />} />
+
+          <Route path="*" element={<Home />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
