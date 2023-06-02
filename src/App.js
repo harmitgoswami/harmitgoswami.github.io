@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link, HashRouter as Router } from "react-router-dom";
+import { Routes, Route, HashRouter as Router } from "react-router-dom";
 import {Home, Personal, Resume, Projects} from "./pages/";
 
 function App() {
