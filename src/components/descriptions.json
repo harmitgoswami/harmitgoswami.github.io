@@ -1,0 +1,38 @@
+{
+   "GIS Mapping Software": {
+        "name": "GIS Mapping Software",
+        "url": "",
+        "date": "Winter 2023",
+        "description": ["Created for ECE297 - Software Design and Communication in a team with 2 other students",
+                        "Scraped and parsed data from OpenStreetMaps Database to create an interactive GIS for everyday usage",
+                        "Built entirely using C++, with help from tools such as EZGL, GTK, and git",
+                        "Developed approach to A* and Travelling Salesman, acheived top 30th percentile in class out of 100+ teams"],
+        "images":["./screenshots/GIS-1.jpg","./screenshots/GIS-2.jpg"]
+    },
+    "Sistema Toronto App": {
+        "name": "Sistema Toronto App",
+        "url": "https://github.com/uoftblueprint/sistema",
+        "date": "Fall 2022 - Winter 2023",
+        "description": ["Project developed within UofT Blueprint with 8 other amazing developers for Sistema Toronto",
+                        "Created a brand-new, free app to assist Sistema teachers in developing music lessons for children",
+                        "Made using React Native and Javascript for both Apple and Android users, using tools like Android Studio, git, and Figma ",
+                        "Personally responsible for integrating Google Drive API for retreiving, caching, and displaying images on the home page"],
+        "images":[]
+    },
+    "Personal Website": {
+        "name": "Personal Website",
+        "url": "http://harmitgoswami.github.io",
+        "date": "Ongoing",
+        "description": ["You're seeing it right now! Inspired by Windows 98's utilitarian design aspects",
+                        "Made for personal and professional usage, and to host future projects",
+                        "Made using React, TailwindCSS, Javascript, and Github Pages"],
+        "images":[]
+    },
+    "Receipt Journal": {
+        "name": "Receipt Journal",
+        "url": "",
+        "date": "Ongoing",
+        "description": ["Coming Soon! A project near and dear to my heart, years in the making"],
+        "images":[]
+    }
+}

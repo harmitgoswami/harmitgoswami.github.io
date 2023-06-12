@@ -1,4 +1,3 @@
-import React from "react";
 import harmitphoto from "../../components/IMG_8478_Original.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -30,14 +29,14 @@ export default function Personal() {
 
                 <div className="font-scp sm:text-base lg:text-lg space-y-8 h-5/6 w-full text-center">
                   <p className="centered">
-                    I'm currently in my second year of Computer Engineering at
+                    I'm currently in my third year of Computer Engineering at
                     the University of Toronto, and I expect to graduate in 2026.
                   </p>
                   <p className="centered">
-                    My passion in tech stems from my early exposures to FRC
-                    Robotics, programming, and STEM. As such, I want to gain
-                    even more exposure to tech, particularly in software,
-                    product, and UI Design.
+                    My passion for engineering takes many forms, but I'm particularly
+                    interested in understanding how software interacts with people on a 
+                    daily basis. As such, I'm always looking to learn more in software development,
+                    product management, and applications of software in control systems.
                   </p>
                   <p className="centered">
                     In my free time, I love listening to music (any genre!),
@@ -46,8 +45,7 @@ export default function Personal() {
                   </p>
                   <p className="centered">
                     (P.S. If you're confused about all the crab icons, it's
-                    because my name is similar to hermit, like the hermit crab!
-                    )
+                    because my name is similar to hermit, like the hermit crab!)
                   </p>
                 </div>
 

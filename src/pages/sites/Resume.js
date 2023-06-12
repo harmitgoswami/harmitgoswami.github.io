@@ -1,4 +1,3 @@
-import React from "react";
 import resumepdf from "../../components/Harmit_Resume.pdf";
 
 export default function Resume() {

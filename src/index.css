@@ -79,6 +79,19 @@ code {
     monospace;
 }
 
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.date-text{
+  font-size: 1.75em;
+}
+
+.desc-text{
+  font-size: 1.25em;
+}
+
 .inner-container {
   width: 100%;
   height: 100%;
@@ -108,4 +121,28 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cancel-box{
+    background: no-repeat center #ccc;
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    height: 22px;
+    width: 22px;
+    float: right;
+    margin: 4px;
+    background-image: url(./assets/icons/close-icon.png);
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  max-width: 90%;
+  height: auto;
 }
