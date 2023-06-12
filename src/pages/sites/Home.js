@@ -2,7 +2,7 @@ import React from "react";
 import IconModule from "../../components/IconModule";
 import journal from "../../assets/icons/notepad-5.png";
 import resume from "../../assets/icons/certificate_checklist-1.png";
-import crab from "../../assets/icons/crabicon.ico";
+import crab from "../../assets/icons/crabicon-2.png";
 
 export default function Home() {
   return (
