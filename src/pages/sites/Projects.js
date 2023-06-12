@@ -108,8 +108,8 @@ export default function Projects() {
                   <div className="grid grid-cols-2 gap-4 mt-12">
                 {
                   modalContent?.images && modalContent.images.map((image, index) => (
-                    <div className="image-container centered" key={index}>
-                      <img src={image} alt={'Project Screenshot'} className="project-image"/>
+                    <div className="image-container overflow-hidden centered" key={index}>
+                      <img src={image} alt={'Project Screenshot'} className="project-image object-cover object-center"/>
                     </div>
                   ))
                 }
