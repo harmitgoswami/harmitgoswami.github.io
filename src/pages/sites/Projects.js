@@ -69,7 +69,7 @@ export default function Projects() {
             },
           }}
         >
-          <div className="w-full h-full px-2 pb-12 bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black">
+          <div className="w-full h-full px-2 pb-12 bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black overflow-hidden">
             <div className="h-7 bg-[#080484] w-full mb-3">
               <button
                 onClick={() => setIsOpen(false)}
@@ -80,14 +80,14 @@ export default function Projects() {
               </p>
             </div>
 
-            <div className="inner-container p-3 border-t-white border-l-white border-b-black border-r-black centered">
-              <div className="inner-container centered border-t-black border-l-black border-b-white border-r-white">
+            <div className="inner-container p-3 border-t-white border-l-white border-b-black border-r-black centered overflow-hidden">
+              <div className="inner-container centered border-t-black border-l-black border-b-white border-r-white overflow-scroll">
                 <div className="bg-white w-full h-full">
-                  <h1 className="centered mb-16">{modalContent?.name}</h1>
-                  <p className="date-text centered mb-16">
+                  <h1 className="centered mb-10">{modalContent?.name}</h1>
+                  <p className="date-text centered mb-10">
                     {modalContent?.date}
                   </p>
-                  <ul className="space-y-6">
+                  <ul className="space-y-2">
                     {modalContent?.description &&
                       modalContent.description.map((sentence, index) => (
                         <li
@@ -105,10 +105,10 @@ export default function Projects() {
                       </a>
                     </p>
                   )}
-                  <div className="grid grid-cols-2 gap-4 mt-12">
+                  <div className="grid grid-cols-2 gap-4 mt-12 overflow-hidden">
                 {
                   modalContent?.images && modalContent.images.map((image, index) => (
-                    <div className="image-container overflow-hidden centered" key={index}>
+                    <div className="image-container overflow-hidden centered w-full " key={index}>
                       <img src={image} alt={'Project Screenshot'} className="project-image object-cover object-center"/>
                     </div>
                   ))
