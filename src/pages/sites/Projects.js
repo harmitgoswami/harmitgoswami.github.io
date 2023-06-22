@@ -20,11 +20,11 @@ export default function Projects() {
   };
 
   return (
-    <div className="bg-[#088484] h-screen w-full centered">
+    <div className="bg-[#088484] h-screen w-screen centered">
       <div className="bg-[#c0c0c0] w-9/12 h-5/6 p-2 border-2 border-t-white border-l-white border-b-black border-r-black">
         <div className="inner-container w-full p-3 border-t-white border-l-white border-b-black border-r-black centered">
           <div className="inner-container w-full centered border-t-black border-l-black border-b-white border-r-white">
-            <div className="grid grid-cols-2 gap-16 bg-white h-full w-full centered sm:overflow-hidden">
+            <div className="grid grid-cols-2 gap-4 bg-white h-full w-full centered ">
               <IconModule
                 onClick={() => handleIconClick("GIS Mapping Software")}
                 hasLink={false}
@@ -81,7 +81,7 @@ export default function Projects() {
             </div>
 
             <div className="inner-container p-3 border-t-white border-l-white border-b-black border-r-black centered overflow-hidden">
-              <div className="inner-container centered border-t-black border-l-black border-b-white border-r-white overflow-scroll">
+              <div className="inner-container centered border-t-black border-l-black border-b-white border-r-white overflow-scroll bg-white">
                 <div className="bg-white w-full h-full">
                   <h1 className="centered mb-10">{modalContent?.name}</h1>
                   <p className="date-text centered mb-10">
