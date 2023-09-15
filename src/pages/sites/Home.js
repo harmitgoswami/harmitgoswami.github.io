@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <div className="bg-[#088484] h-screen w-full flex flex-col">
       
-      {/* Main Content */}
       <div className="flex-1 flex justify-center items-center">
         <div className="w-8/12 h-3/6 px-1 pb-9 bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black">
           
