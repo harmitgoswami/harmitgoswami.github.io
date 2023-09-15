@@ -5,7 +5,7 @@ export default function IconModule({hasLink, image, link, name, onClick}) {
     const props = hasLink ? {to: link} : {};
 
     return (
-        <div onClick={onClick}>
+        <div onClick={onClick} className="m-4">
             <div className="icon-box centered cursor-pointer">
                 <Component {...props}>
                     <div className="centered">

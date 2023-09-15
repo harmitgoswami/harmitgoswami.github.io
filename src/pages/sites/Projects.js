@@ -7,8 +7,6 @@ import descriptions from "../../components/descriptions.json";
 import IconModule from "../../components/IconModule";
 import Modal from "react-modal";
 
-Modal.setAppElement("#root"); // This line is important for accessibility purposes
-
 export default function Projects() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
@@ -24,7 +22,7 @@ export default function Projects() {
       <div className="bg-[#c0c0c0] w-9/12 h-5/6 p-2 border-2 border-t-white border-l-white border-b-black border-r-black">
         <div className="inner-container w-full p-3 border-t-white border-l-white border-b-black border-r-black centered">
           <div className="inner-container w-full centered border-t-black border-l-black border-b-white border-r-white">
-            <div className="grid grid-cols-2 gap-4 bg-white h-full w-full centered ">
+            <div className="bg-white h-full w-full centered ">
               <IconModule
                 onClick={() => handleIconClick("GIS Mapping Software")}
                 hasLink={false}
@@ -42,12 +40,6 @@ export default function Projects() {
                 hasLink={false}
                 image={monitor}
                 name={"Personal Website"}
-              />
-              <IconModule
-                onClick={() => handleIconClick("Receipt Journal")}
-                hasLink={false}
-                image={receipt}
-                name={"Receipt Journal"}
               />
             </div>
           </div>
