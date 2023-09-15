@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b16bdb9.css",
-    "main.js": "/static/js/main.9478b6c3.js",
+    "main.css": "/static/css/main.97a9bec3.css",
+    "main.js": "/static/js/main.0c857786.js",
     "static/js/787.e0e30bcc.chunk.js": "/static/js/787.e0e30bcc.chunk.js",
     "static/media/IMG_8478_Original.jpg": "/static/media/IMG_8478_Original.743b0dd9d0bd3f32284d.jpg",
     "static/media/SourceCodePro-Medium.ttf": "/static/media/SourceCodePro-Medium.79fb7b8ab5dcd34131a9.ttf",
-    "static/media/Harmit_Resume.pdf": "/static/media/Harmit_Resume.ffc5f2015e337a6d4bdf.pdf",
+    "static/media/Harmit_Resume.pdf": "/static/media/Harmit_Resume.d7bd87c8d56cf6945424.pdf",
     "static/media/PlusJakartaSans-MediumItalic.woff2": "/static/media/PlusJakartaSans-MediumItalic.2959e2182ca1eae28304.woff2",
     "static/media/PlusJakartaSans-Italic.woff2": "/static/media/PlusJakartaSans-Italic.cff96ce6e87b0ea22b4b.woff2",
     "static/media/PlusJakartaSans-Medium.woff2": "/static/media/PlusJakartaSans-Medium.ff53fe0e6d25e3b52a8c.woff2",
@@ -13,12 +13,12 @@
     "static/media/PlusJakartaSans-SemiBold.woff2": "/static/media/PlusJakartaSans-SemiBold.dc64b89d6242623573c4.woff2",
     "static/media/PlusJakartaSans-Regular.woff2": "/static/media/PlusJakartaSans-Regular.c4e0d18736aa954b32bf.woff2",
     "index.html": "/index.html",
-    "main.9b16bdb9.css.map": "/static/css/main.9b16bdb9.css.map",
-    "main.9478b6c3.js.map": "/static/js/main.9478b6c3.js.map",
+    "main.97a9bec3.css.map": "/static/css/main.97a9bec3.css.map",
+    "main.0c857786.js.map": "/static/js/main.0c857786.js.map",
     "787.e0e30bcc.chunk.js.map": "/static/js/787.e0e30bcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b16bdb9.css",
-    "static/js/main.9478b6c3.js"
+    "static/css/main.97a9bec3.css",
+    "static/js/main.0c857786.js"
   ]
 }
