@@ -2,7 +2,7 @@ import { useState } from "react";
 import globe from "../../assets/icons/entire_network_globe-0.png";
 import cd from "../../assets/icons/cd_audio_cd_a-3.png";
 import monitor from "../../assets/icons/monitor_windows.png";
-import receipt from "../../assets/icons/script_file_teal-1.png";
+//import receipt from "../../assets/icons/script_file_teal-1.png";
 import descriptions from "../../components/descriptions.json";
 import IconModule from "../../components/IconModule";
 import Modal from "react-modal";
