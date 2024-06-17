@@ -3,7 +3,7 @@ import '../styles/styles.css';
 
 export const AboutMe = () => {
     const openLinkedInLink = () => {
-        const linkedinLink = 'https://pbase.com/harmit/receipt_journal';
+        const linkedinLink = 'https://www.linkedin.com/in/harmit-goswami/';
         window.open(linkedinLink, '_blank');
     };
 
@@ -33,7 +33,7 @@ export const AboutMe = () => {
             </p>
             <br />
             <p>
-                In my free time, I love listening to music (mostly hip-hop and R&B), watching TV shows (The Sopranos is probably my favourite), watching basketball, playing Pokémon, and reading.
+                In my free time, I love listening to music (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar), watching TV shows (The Sopranos is my favourite), watching basketball, playing Pokémon, and reading.
                 Feel free to reach out anytime about any of these topics!
             </p>
             <br />
