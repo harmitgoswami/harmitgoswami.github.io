@@ -13,7 +13,9 @@ export const Projects = () => {
 
     return (
         <div>
-            <h1>Check out some of my projects!</h1>
+            <h1>My Portfolio</h1>
+            <br />
+            <p>This website was inspired by Windows Vista, and the Windows (Frutiger) Aero design language. I chose a crab favicon because my name is similar to "hermit", like the hermit crab!</p>
             <br />
             <p>To see my software projects, check out my <button onClick={openGithubLink} className="link-button">GitHub</button> page.</p>
             <br />
