@@ -9,6 +9,11 @@
     border-radius: 10px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
   }
+  @media (max-width: 768px) {
+    .window {
+      width: 400px;
+    }
+  }
   .strips {
     background: repeating-linear-gradient(
       45deg,

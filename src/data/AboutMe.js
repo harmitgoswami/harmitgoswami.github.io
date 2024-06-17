@@ -19,7 +19,7 @@ export const AboutMe = () => {
             <h3>My name is Harmit Goswami. Nice to meet you!</h3>
             <br />
             <p>
-                I'm currently a 3rd year student at the University of Toronto studying Electrical and Computer Engineering.
+                I've just finished my 3rd year at the University of Toronto studying Electrical and Computer Engineering.
             </p>
             <br />
             <p>
@@ -28,12 +28,13 @@ export const AboutMe = () => {
             </p>
             <br />
             <p>
-                Right now, I'm a Software Engineer Intern at Mozilla, working on  <button onClick={openPontoonLink} className='link-button'>Pontoon</button> 
+                Currently, I'm a Software Engineer Intern at Mozilla, working on <button onClick={openPontoonLink} className='link-button'>Pontoon </button>‎ 
                 (Mozilla's localization platform).
             </p>
             <br />
             <p>
-                In my free time, I love listening to music (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar), watching TV shows (The Sopranos is my favourite), watching basketball, playing Pokémon, and reading.
+                In my free time, I love listening to music (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar), 
+                watching TV shows (The Sopranos is my favourite), watching basketball (Lebron is my GOAT), playing Pokémon, and reading.
                 Feel free to reach out anytime about any of these topics!
             </p>
             <br />
