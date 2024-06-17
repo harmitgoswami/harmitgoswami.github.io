@@ -1,87 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import User from '../images/User018.ico';
 import Folder from '../images/Folder016.ico';
-import Projects from '../images/App051.ico';
-import styled, { createGlobalStyle } from 'styled-components';
+import Project from '../images/App051.ico';
 import Window from '../components/Window';
-
-// Global style reset
-const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-`;
-
-const pageStyles = {
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  minHeight: '100vh',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  backgroundImage: 'url("./vista.jpg")',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  color: '#fff'
-};
-
-const mainStyles = {
-  flex: 1,
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  padding: '0 100px',
-};
-
-const iconContainerStyles = {
-  display: 'flex',
-  justifyContent: 'space-around',
-  width: '100%',
-  maxWidth: '600px',
-};
-
-const footerStyles = {
-  display: 'flex',
-  width: '100%',
-  justifyContent: 'center',
-  padding: '20px',
-  color: '#fff',
-  zIndex: 100,
-  backgroundColor: 'rgb(22,23,25)',
-  background: 'linear-gradient(0deg, rgba(22,23,25,1) 35%, rgba(159,160,159,1) 65%)',
-  opacity: 0.93,
-};
-
-const timeStyle = {
-  marginLeft: 'auto',
-};
-
-const Icon = styled.img`
-  width: 10%;
-
-  @media (max-width: 1200px) {
-    width: 8%;
-  }
-
-  @media (max-width: 992px) {
-    width: 10%;
-  }
-
-  @media (max-width: 768px) {
-    width: 12%;
-  }
-
-  @media (max-width: 576px) {
-    width: 30%;
-  }
-`;
+import {AboutMe} from '../data/AboutMe';
+import {Projects} from '../data/Projects';
+import {Resume} from '../data/Resume';
+import '../styles/styles.css';
 
 const IndexPage = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -90,7 +15,6 @@ const IndexPage = () => {
     resume: false,
     projects: false
   });
-  const [aboutMeContent, setAboutMeContent] = useState('');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -98,13 +22,6 @@ const IndexPage = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    fetch('/data/aboutme.html')
-      .then(response => response.text())
-      .then(text => setAboutMeContent(text))
-      .catch(error => console.error('Error loading about me content:', error));
   }, []);
 
   const handleIconClick = (windowName) => {
@@ -122,38 +39,35 @@ const IndexPage = () => {
   };
 
   return (
-    <>
-      <GlobalStyle />
-      <main style={pageStyles}>
-        <div style={mainStyles}>
-          <div style={iconContainerStyles}>
-            <Icon src={User} alt="About me" onClick={() => handleIconClick('aboutMe')} />
-            <Icon src={Folder} alt="Resume" onClick={() => handleIconClick('resume')} />
-            <Icon src={Projects} alt="Projects" onClick={() => handleIconClick('projects')} />
-          </div>
-        </div>
-       
-        {openWindows.aboutMe && (
-          <div style={{ position: 'absolute', top: '50%', left: '25%', transform: 'translate(-50%, -50%)' }}>
-            <Window title="About Me" content={aboutMeContent} onClose={() => handleClose('aboutMe')} />
-          </div>
-        )}
-        {openWindows.resume && (
-          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-            <Window title="Resume" content="RESUME" onClose={() => handleClose('resume')} />
-          </div>
-        )}
-        {openWindows.projects && (
-          <div style={{ position: 'absolute', top: '25%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-            <Window title="Projects" content="PROJECTS" onClose={() => handleClose('projects')} />
-          </div>
-        )}
-         <div style={footerStyles}>
-          <p>© 2024 Harmit Goswami</p>
-          <span style={timeStyle}>{time}</span>
+    <div className="page">
+      <main className="main">
+        <div className="icon-container">
+          <img src={User} alt="About me" className="icon" onClick={() => handleIconClick('aboutMe')} />
+          <img src={Folder} alt="Resume" className="icon" onClick={() => handleIconClick('resume')} />
+          <img src={Project} alt="Project" className="icon" onClick={() => handleIconClick('projects')} />
         </div>
       </main>
-    </>
+
+      {openWindows.aboutMe && (
+        <div style={{ position: 'absolute', top: '5%', left: '10%', transform: 'translate(-50%, -50%)' }}>
+          <Window title="About Me" content={<AboutMe />} onClose={() => handleClose('aboutMe')} />
+        </div>
+      )}
+      {openWindows.resume && (
+        <div style={{ position: 'absolute', top: '5%', left: '30%', transform: 'translate(-50%, -50%)' }}>
+          <Window title="Résumé (as of September 2023)" content={<Resume/>} onClose={() => handleClose('resume')} />
+        </div>
+      )}
+      {openWindows.projects && (
+        <div style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Window title="Projects" content={<Projects />} onClose={() => handleClose('projects')} />
+        </div>
+      )}
+      <div className="footer">
+        <p>© Harmit Goswami 2024</p>
+        <span className="time">{time}</span>
+      </div>
+    </div>
   );
 }
 

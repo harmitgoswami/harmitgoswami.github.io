@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    width: 400px; /* Adjust the width as needed */
+    width: 600px;
     border-radius: 10px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
   }
@@ -53,18 +53,15 @@
       rgba(255, 255, 255, 0.6) 27px
     );
   }
-  .button.close {
+  .window-header .buttons .button.close {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    border-bottom-right-radius: 5px;
-  }
-  .button.close:hover {
-    background: linear-gradient(
-      rgba(255, 255, 255, 0.6) 6px,
-      rgba(255, 0, 0, 0.7) 15px,
-      rgba(255, 255, 255, 0.6) 27px
-    );
-  }
+    background: rgba(255, 0, 0, 0.7);
+    opacity: 75%;
+}
+.window-header .buttons .button.close:hover {
+    opacity: 100%;
+}
 
   .window-text {
     padding: 0.5rem;
