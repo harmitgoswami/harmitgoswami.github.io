@@ -8,12 +8,13 @@
   html, body {
     height: 100%;
     width: 100%;
+    font-family: 'Calibri', 'Arial', sans-serif;
     overflow: hidden;
   }
   
   /* Page styles */
   .page {
-    font-family: -apple-system, Roboto, sans-serif, serif;
+    font-family: 'Calibri', 'Arial', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

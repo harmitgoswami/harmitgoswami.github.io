@@ -38,6 +38,45 @@ const IndexPage = () => {
     }));
   };
 
+  const getWindowStyles = (windowName) => {
+    let windowPos;
+
+    switch(windowName) {
+      case 'aboutMe':
+        windowPos = ['2%', '10%'];
+        break;
+      case 'resume':
+        windowPos = ['25%', '50%'];
+        break;
+      case 'projects':
+        windowPos = ['50%', '50%'];
+        break;
+      default:
+        windowPos = ['50%', '50%'];
+    }
+  
+    if (window.matchMedia("(max-width: 640px)").matches) {
+      // Mobile
+      return {
+        position: 'absolute',
+        top: '5%',
+        left: '3%',
+        transform: 'translate(-50%, -50%)',
+        width: '90%',
+        maxWidth: '90%',
+      };
+    } else {
+      // Desktop
+      return {
+        position: 'absolute',
+        top: windowPos[0],
+        left: windowPos[1],
+        transform: 'translate(-50%, -50%)',
+      };
+    }
+  };
+  
+
   return (
     <div className="page">
       <main className="main">
@@ -49,17 +88,17 @@ const IndexPage = () => {
       </main>
 
       {openWindows.aboutMe && (
-        <div style={{ position: 'absolute', top: '5%', left: '10%', transform: 'translate(-50%, -50%)' }}>
+        <div style={getWindowStyles("aboutMe")}>
           <Window title="About Me" content={<AboutMe />} onClose={() => handleClose('aboutMe')} />
         </div>
       )}
       {openWindows.resume && (
-        <div style={{ position: 'absolute', top: '5%', left: '30%', transform: 'translate(-50%, -50%)' }}>
+        <div style={getWindowStyles("resume")}>
           <Window title="Résumé (as of September 2023)" content={<Resume/>} onClose={() => handleClose('resume')} />
         </div>
       )}
       {openWindows.projects && (
-        <div style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+        <div style={getWindowStyles("projects")}>
           <Window title="Projects" content={<Projects />} onClose={() => handleClose('projects')} />
         </div>
       )}

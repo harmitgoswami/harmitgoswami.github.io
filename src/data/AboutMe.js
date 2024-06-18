@@ -12,6 +12,22 @@ export const AboutMe = () => {
         window.open(pontoonLink, '_blank');
     }
 
+    const getImageStyle = () => {
+        if (window.matchMedia("(max-width: 640px)").matches) {
+            // Mobile
+            return {
+                marginLeft: '12%', 
+                marginTop: '2%'
+            };
+        } else {
+            // Desktop
+            return {
+                marginLeft: '25%', 
+                marginTop: '5%'
+            };
+        }
+    };
+
     return (
         <div>
             <h1>Hi!</h1>
@@ -40,7 +56,7 @@ export const AboutMe = () => {
             <br />
             <p>LinkedIn: <button onClick={openLinkedInLink} className='link-button'>www.linkedin.com/in/harmit-goswami/</button></p>
             <p>Email: harmitgoswami@gmail.com</p>
-            <div style={{marginLeft: '25%', marginTop: '5%'}}>
+            <div style={getImageStyle()}>
                 <img src="harmit.jpg" style={{width: '280px'}} alt="Me at the Mozilla Toronto office" />
             </div> 
         </div>

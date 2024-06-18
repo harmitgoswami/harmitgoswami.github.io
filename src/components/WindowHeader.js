@@ -6,7 +6,7 @@ const WindowHeader = ({ title, onClose }) => {
     <div className="window-header">
       <p>{title}</p>
       <div className="buttons">
-        <Button type="close" iconClass="fas fa-times" onClick={onClose} />
+        <Button type="close" onClick={onClose} />
       </div>
     </div>
   );
