@@ -60,7 +60,7 @@ const IndexPage = () => {
       return {
         position: 'absolute',
         top: '5%',
-        left: '3%',
+        left: '5%',
         transform: 'translate(-50%, -50%)',
         width: '90%',
         maxWidth: '90%',

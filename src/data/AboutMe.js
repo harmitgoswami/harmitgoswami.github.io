@@ -12,11 +12,16 @@ export const AboutMe = () => {
         window.open(pontoonLink, '_blank');
     }
 
+    const openSpotifyLink = () => {
+        const spotifyLink = 'https://open.spotify.com/user/iwhdpjdgakbzlff41cqchpams?si=6c409b1dbccb4c06';
+        window.open(spotifyLink, '_blank');
+    }
+
     const getImageStyle = () => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             // Mobile
             return {
-                marginLeft: '12%', 
+                marginLeft: '6%', 
                 marginTop: '2%'
             };
         } else {
@@ -49,7 +54,7 @@ export const AboutMe = () => {
             </p>
             <br />
             <p>
-                In my free time, I love listening to music (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar), 
+                In my free time, I love <button onClick={openSpotifyLink} className='link-button'>listening to music </button> (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar), 
                 watching TV shows (The Sopranos is my favourite), watching basketball (Lebron is my GOAT), playing Pokémon, and reading.
                 Feel free to reach out anytime about any of these topics!
             </p>

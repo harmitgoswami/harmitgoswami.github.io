@@ -11,7 +11,7 @@
   }
   @media (max-width: 640px){
     .window {
-      width: 400px;
+      width: 350px;
     }
   }
   .strips {
@@ -45,6 +45,7 @@
     position: absolute;
     top: 0;
     right: 10px;
+    z-index: 100;
   }
   .button {
     padding-top: 0.3rem;
@@ -58,17 +59,25 @@
       rgba(255, 255, 255, 0.6) 27px
     );
   }
-  .window-header .buttons .button.close {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    background: rgba(255, 0, 0, 0.7);
-    opacity: 75%;
-}
-.window-header .buttons .button.close:hover {
-    opacity: 100%;
-}
-
+    .window-header .buttons .button.close {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      border-bottom-right-radius: 5px;
+  }
+  .window-header .buttons .button.close p{
+    font-size: 0.7rem;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
+  .window-header .buttons .button.close:hover {
+      background: rgba(255, 0, 0, 0.502)
+  }
   .window-text {
     padding: 0.5rem;
     color: black;
+  }
+  @media (max-width: 640px){
+    .window-text {
+      font-size: 0.7rem;
+    }
   }
