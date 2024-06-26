@@ -1,6 +1,6 @@
 Website for personal and professional use
 
-TODO: Resize windows and fix close button for mobile view
+TODO: Resize windows and fix close button for mobile view, add browser -> blog post window
 
 Inspired by Windows Vista
 
