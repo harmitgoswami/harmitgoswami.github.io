@@ -48,8 +48,7 @@
     z-index: 100;
   }
   .button {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding: 8px;
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
   .button:hover {

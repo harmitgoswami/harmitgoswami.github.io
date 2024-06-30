@@ -17,21 +17,37 @@ export const AboutMe = () => {
         window.open(spotifyLink, '_blank');
     }
 
-    const getImageStyle = () => {
+    const getImgStyle = () => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             // Mobile
             return {
-                marginLeft: '6%', 
-                marginTop: '2%'
+                marginLeft: '18%', 
+                marginTop: '2%',
             };
         } else {
             // Desktop
             return {
                 marginLeft: '25%', 
-                marginTop: '5%'
+                marginTop: '5%',
             };
         }
     };
+
+    const getPhotoStyle = () => {
+        if (window.matchMedia("(max-width: 640px)").matches) {
+            // Mobile
+            return {
+                width: '200px',
+                border: '3px solid rgb(211, 227, 225)'
+            };
+        } else {
+            // Desktop
+            return {
+                width: '280px',
+                border: '3px solid rgb(211, 227, 225)'
+            };
+        }
+    }
 
     return (
         <div>
@@ -61,8 +77,8 @@ export const AboutMe = () => {
             <br />
             <p>LinkedIn: <button onClick={openLinkedInLink} className='link-button'>www.linkedin.com/in/harmit-goswami/</button></p>
             <p>Email: harmitgoswami@gmail.com</p>
-            <div style={getImageStyle()}>
-                <img src="harmit.jpg" style={{width: '280px'}} alt="Me at the Mozilla Toronto office" />
+            <div style={getImgStyle()}>
+                <img src="harmit.jpg" style={getPhotoStyle()} alt="Me at the Mozilla Toronto office" />
             </div> 
         </div>
     );

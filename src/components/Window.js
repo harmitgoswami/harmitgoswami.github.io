@@ -7,7 +7,7 @@ import '../styles/window.css';
 const Window = ({ title, content, onClose }) => {
 
   return (
-    <Draggable handle=".window-header">
+    <Draggable handle=".window-header" cancel=".button">
       <div className="window strips draggable">
         <WindowHeader title={title} onClose={onClose} />
         <WindowBody  content={content} />
