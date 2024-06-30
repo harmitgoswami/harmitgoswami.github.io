@@ -1,8 +1,8 @@
 Website for personal and professional use
 
-TODO: Resize windows and fix close button for mobile view
+TODO: Improve close button for mobile view, add browser -> blog window 
 
-Inspired by Windows Vista
+Inspired by Windows Vista & the Frutiger Aero design
 
 Created with `create-react-app`
 
