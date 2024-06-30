@@ -16,6 +16,13 @@ const IndexPage = () => {
     projects: false
   });
 
+  const [zIndex, setZIndex] = useState({
+    aboutMe: 1,
+    resume: 1,
+    projects: 1
+  });
+
+
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleTimeString());
@@ -36,6 +43,16 @@ const IndexPage = () => {
       ...prevState,
       [windowName]: false
     }));
+  };
+
+  const bringToFront = (windowName) => {
+    setZIndex((prevState) => {
+      const maxZIndex = Math.max(...Object.values(prevState)) + 1;
+      return {
+        ...prevState,
+        [windowName]: maxZIndex
+      };
+    });
   };
 
   const getWindowStyles = (windowName) => {
@@ -64,6 +81,7 @@ const IndexPage = () => {
         transform: 'translate(-50%, -50%)',
         width: '90%',
         maxWidth: '90%',
+        zIndex: zIndex[windowName]
       };
     } else {
       // Desktop
@@ -72,6 +90,7 @@ const IndexPage = () => {
         top: windowPos[0],
         left: windowPos[1],
         transform: 'translate(-50%, -50%)',
+        zIndex: zIndex[windowName]
       };
     }
   };
@@ -88,17 +107,26 @@ const IndexPage = () => {
       </main>
 
       {openWindows.aboutMe && (
-        <div style={getWindowStyles("aboutMe")}>
+        <div 
+          style={getWindowStyles("aboutMe")}
+          onMouseDown={() => bringToFront('aboutMe')}
+        >
           <Window title="About Me" content={<AboutMe />} onClose={() => handleClose('aboutMe')} />
         </div>
       )}
       {openWindows.resume && (
-        <div style={getWindowStyles("resume")}>
+        <div 
+          style={getWindowStyles("resume")}
+          onMouseDown={() => bringToFront('resume')}
+        >
           <Window title="Résumé (as of September 2023)" content={<Resume/>} onClose={() => handleClose('resume')} />
         </div>
       )}
       {openWindows.projects && (
-        <div style={getWindowStyles("projects")}>
+        <div 
+          style={getWindowStyles("projects")}
+          onMouseDown={() => bringToFront('projects')}
+        >
           <Window title="Projects" content={<Projects />} onClose={() => handleClose('projects')} />
         </div>
       )}

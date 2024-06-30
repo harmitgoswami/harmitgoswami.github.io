@@ -14,7 +14,7 @@ export const Resume = () => {
             <br />
             <p>(For an up-to-date version, please email me at harmitgoswami@gmail.com)</p>
             <br />
-            <button onClick={openGoogleDriveLink} style={{marginLeft: '50%'}}>Open</button>
+            <button onClick={openGoogleDriveLink} className='resume-button'>Open</button>
         </div>
     );
 };
