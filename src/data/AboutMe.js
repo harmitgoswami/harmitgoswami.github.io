@@ -17,6 +17,11 @@ export const AboutMe = () => {
         window.open(spotifyLink, '_blank');
     }
 
+    const openGoodreadsLink = () => {
+        const goodreadsLink = 'https://goodreads.com/harmitgoswami';
+        window.open(goodreadsLink, '_blank');
+    }
+
     const getImgStyle = () => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             // Mobile
@@ -71,7 +76,7 @@ export const AboutMe = () => {
             <br />
             <p>
                 In my free time, I love <button onClick={openSpotifyLink} className='link-button'>listening to music </button> (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar), 
-                watching TV shows (The Sopranos is my favourite), watching basketball (Lebron is my GOAT), playing Pokémon, and reading.
+                watching TV shows (The Sopranos is my favourite), watching basketball (Lebron is my GOAT), playing Pokémon, and <button onClick={openGoodreadsLink} className='link-button'>reading </button>.
                 Feel free to reach out anytime about any of these topics!
             </p>
             <br />
