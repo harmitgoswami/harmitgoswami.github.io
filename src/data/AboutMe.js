@@ -65,8 +65,8 @@ export const AboutMe = () => {
             </p>
             <br />
             <p>
-                I'm passionate about the internet, both the technical and social aspects of it. One of my career goals is to work on projects that make the internet better
-                and more accessible for everyone, something I feel has become increasingly important in today's world.
+                I'm passionate about the Internet/Web, both the technical and social aspects of them. One of my career goals is to work towards making the Web better
+                and more accessible for everyone, especially since the modern Web-surfing experience has become drastically worse in recent years.
             </p>
             <br />
             <p>
@@ -75,8 +75,9 @@ export const AboutMe = () => {
             </p>
             <br />
             <p>
-                In my free time, I love <button onClick={openSpotifyLink} className='link-button'>listening to music </button> (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar), 
-                watching TV shows (The Sopranos is my favourite), watching basketball (Lebron is my GOAT), playing Pokémon, and <button onClick={openGoodreadsLink} className='link-button'>reading </button>.
+                In my free time, I love <button onClick={openSpotifyLink} className='link-button'>listening to music </button> (my top artists are Frank Ocean, Aphex Twin, and Kendrick Lamar). 
+                I'm always watching a bunch of TV shows, with The Sopranos and 30 Rock being among my favourites. I also love playing volleyball and basketball (Lebron is my GOAT).
+                When I'm not doing any of those, I'm usually either hanging with friends, playing Pokémon, or <button onClick={openGoodreadsLink} className='link-button'>reading </button>.
                 Feel free to reach out anytime about any of these topics!
             </p>
             <br />
