@@ -119,7 +119,7 @@ const IndexPage = () => {
           style={getWindowStyles("resume")}
           onMouseDown={() => bringToFront('resume')}
         >
-          <Window title="Résumé (as of September 2023)" content={<Resume/>} onClose={() => handleClose('resume')} />
+          <Window title="Résumé (as of September 2024)" content={<Resume/>} onClose={() => handleClose('resume')} />
         </div>
       )}
       {openWindows.projects && (
