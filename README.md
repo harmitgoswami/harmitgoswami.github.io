@@ -4,7 +4,6 @@ https://harmitgoswami.com
 
 TODO:
 - Update about me blurb
-- Update resume 
 ---
 
 Created with `create-react-app`
