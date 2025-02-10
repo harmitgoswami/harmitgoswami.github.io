@@ -131,7 +131,7 @@ const IndexPage = () => {
         </div>
       )}
       <div className="footer">
-        <p>© Harmit Goswami 2024</p>
+        <p>© Harmit Goswami 2025</p>
         <span className="time">{time}</span>
       </div>
     </div>
