@@ -4,7 +4,6 @@ https://harmitgoswami.com
 
 TODO:
 - Update about me blurb
-- Update footer year
 - Update resume 
 ---
 
