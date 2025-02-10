@@ -1,7 +1,10 @@
 # Website for personal and professional use
 
+https://harmitgoswami.com
+
 TODO:
-- Add browser -> blog window
+- Update about me blurb
+- Update footer year
 - Update resume 
 ---
 
