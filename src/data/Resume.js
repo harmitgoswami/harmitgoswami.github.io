@@ -11,7 +11,7 @@ export const Resume = () => {
             <h1>Résumé</h1>
             <br />     
             <p>Whether you're a recruiter or a fellow student,
-                feel free to reach out if you want to know more about any of my experiences! :^)
+                feel free to reach out if you'd like to learn more about any of my experiences! :^)
                 </p>
             <br />
             <p>(NOTE: Clicking the button below opens a Google Drive link in a new tab)</p>
