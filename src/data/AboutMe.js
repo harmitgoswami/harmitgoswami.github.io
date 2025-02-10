@@ -71,7 +71,7 @@ export const AboutMe = () => {
             <br />
             <p>
                 Currently, I'm a Software Engineer Intern at Mozilla, working on <button onClick={openPontoonLink} className='link-button'>Pontoon </button>‎ 
-                (Mozilla's localization platform).
+                (Mozilla's translation management system).
             </p>
             <br />
             <p>
