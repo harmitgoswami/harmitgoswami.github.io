@@ -79,20 +79,22 @@
 
   /* Button styles */
   .resume-button {
-    background-color: rgba(116, 159, 144, 0.202);
+    /* background-color: rgba(116, 159, 144, 0.202); */
+    background-color: #7177758b;
     padding: 10px 20px;
-    border: 1px solid white;
+    border: 1px solid rgba(113, 119, 117, 0.546);
     border-radius: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 16px;
     display: block;
     margin: 0 auto; 
-    color: white;
+    /* color: white; */
+    color: rgba(202, 212, 209, 0.546)
   }
 
-  .resume-button:hover {
+  /* .resume-button:hover {
     background-color: rgba(173, 238, 215, 0.202);
-  }
+  } */
 
 
   @media (max-width: 1200px) {
