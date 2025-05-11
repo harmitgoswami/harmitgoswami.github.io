@@ -11,6 +11,10 @@
     font-family: 'Calibri', 'Arial', sans-serif;
     overflow: hidden;
   }
+
+  ul {
+    margin-left: 18px;
+  }
   
   /* Page styles */
   .page {

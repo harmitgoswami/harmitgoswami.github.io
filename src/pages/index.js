@@ -5,20 +5,20 @@ import Project from '../images/App051.ico';
 import Window from '../components/Window';
 import {AboutMe} from '../data/AboutMe';
 import {Projects} from '../data/Projects';
-import {Resume} from '../data/Resume';
+import {Experience} from '../data/Experience';
 import '../styles/styles.css';
 
 const IndexPage = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
   const [openWindows, setOpenWindows] = useState({
     aboutMe: false,
-    resume: false,
+    experience: false,
     projects: false
   });
 
   const [zIndex, setZIndex] = useState({
     aboutMe: 1,
-    resume: 1,
+    experience: 1,
     projects: 1
   });
 
@@ -62,7 +62,7 @@ const IndexPage = () => {
       case 'aboutMe':
         windowPos = ['2%', '10%'];
         break;
-      case 'resume':
+      case 'experience':
         windowPos = ['25%', '50%'];
         break;
       case 'projects':
@@ -101,7 +101,7 @@ const IndexPage = () => {
       <main className="main">
         <div className="icon-container">
           <img src={User} alt="About me" className="icon" onClick={() => handleIconClick('aboutMe')} />
-          <img src={Folder} alt="Resume" className="icon" onClick={() => handleIconClick('resume')} />
+          <img src={Folder} alt="Experience" className="icon" onClick={() => handleIconClick('experience')} />
           <img src={Project} alt="Project" className="icon" onClick={() => handleIconClick('projects')} />
         </div>
       </main>
@@ -114,12 +114,12 @@ const IndexPage = () => {
           <Window title="About Me" content={<AboutMe />} onClose={() => handleClose('aboutMe')} />
         </div>
       )}
-      {openWindows.resume && (
+      {openWindows.experience && (
         <div 
-          style={getWindowStyles("resume")}
-          onMouseDown={() => bringToFront('resume')}
+          style={getWindowStyles("experience")}
+          onMouseDown={() => bringToFront('experience')}
         >
-          <Window title="Résumé (as of October 2024)" content={<Resume/>} onClose={() => handleClose('resume')} />
+          <Window title="Work Experience (as of May 2025)" content={<Experience/>} onClose={() => handleClose('experience')} />
         </div>
       )}
       {openWindows.projects && (
