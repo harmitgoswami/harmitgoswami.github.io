@@ -27,7 +27,7 @@ export const Experience = () => {
               <strong>Amazon</strong>: <em>SDE Intern</em>, Summer 2025
               <ul>
                 <li>Team: Pick UI (Amazon Fulfillment Technologies)</li>
-                <li>Tools: TypeScript (React), Java (Spring Boot)</li>
+                <li>Tools: TypeScript (React), Java</li>
               </ul>
             </li>
             <li>
