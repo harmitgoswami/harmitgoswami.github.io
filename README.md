@@ -3,7 +3,7 @@
 https://harmitgoswami.com
 
 TODO:
-- Update about me blurb
+- ...
 ---
 
 Created with `create-react-app`
