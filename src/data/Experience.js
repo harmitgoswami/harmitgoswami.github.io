@@ -18,7 +18,7 @@ export const Experience = () => {
           <br />
           <p>
             I primarily have experience in full-stack development, leveraging tools like
-            JavaScript/TypeScript (React), Python (Django), Java, Git, and Google Cloud Platform.
+            JavaScript/TypeScript (React), Python (Django), Git, AWS, and Google Cloud Platform.
           </p>
           <br />
           <p>Here's some places I've worked at previously:</p>
@@ -27,7 +27,7 @@ export const Experience = () => {
               <strong>Amazon</strong>: <em>SDE Intern</em>, Summer 2025
               <ul>
                 <li>Team: Pick UI (Amazon Fulfillment Technologies)</li>
-                <li>Tools: TypeScript, Java</li>
+                <li>Tools: TypeScript, React, AWS</li>
               </ul>
             </li>
             <li>
