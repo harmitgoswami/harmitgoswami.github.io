@@ -7,8 +7,6 @@ export const AboutMe = () => {
     window.open(linkedinLink, "_blank");
   };
 
-
-
   const openSpotifyLink = () => {
     const spotifyLink =
       "https://open.spotify.com/user/iwhdpjdgakbzlff41cqchpams?si=6c409b1dbccb4c06";
@@ -61,15 +59,14 @@ export const AboutMe = () => {
 </h3>
       <br />
       <p>
-        I'm entering my fourth year at the University of Toronto studying
+        I'm in my fourth year at the University of Toronto studying
         Electrical and Computer Engineering.
       </p>
       <br />
       <p>
         I'm passionate about the Internet/Web, both the technical and social
         aspects of them. One of my career goals is to work towards making the
-        Web better and more accessible for everyone, especially since the modern
-        Web-surfing experience has become drastically worse in recent years.
+        Web better and more accessible for everyone.
       </p>
 
       <br />
